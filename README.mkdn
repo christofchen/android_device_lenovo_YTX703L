@@ -1,4 +1,4 @@
-Device Tree for Lenovo Lenovo Yoga Tablet 3 Plus (YT-X703F)
+Device Tree for Lenovo Yoga Tablet 3 Plus LTE (YT-X703L)
 ===========================================
 
 Basic   | Spec Sheet

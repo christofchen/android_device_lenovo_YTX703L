@@ -18,12 +18,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from YT-X703F device
-$(call inherit-product, device/lenovo/YTX703F/device.mk)
+# Inherit from YT-X703L device
+$(call inherit-product, device/lenovo/YTX703L/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := YTX703F
-PRODUCT_NAME := lineage_YTX703F
+PRODUCT_DEVICE := YTX703L
+PRODUCT_NAME := lineage_YTX703L
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := YTX703F
+PRODUCT_MODEL := YTX703L
 PRODUCT_MANUFACTURER := LENOVO

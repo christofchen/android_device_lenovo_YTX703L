@@ -15,7 +15,7 @@
 #
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/lenovo/YTX703F/YTX703F-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/YTX703L/YTX703L-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

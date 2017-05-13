@@ -21,6 +21,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),YTX703F)
+ifeq ($(TARGET_DEVICE),YTX703L)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

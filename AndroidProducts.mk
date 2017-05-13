@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/YTX703F.mk
+    $(LOCAL_DIR)/YTX703L.mk

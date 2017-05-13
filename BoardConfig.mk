@@ -10,22 +10,22 @@
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
+# See te License for the specific language governing permissions and
 # limitations under the License.
 
 # inherit from common msm8976-common
 -include device/lenovo/msm8976-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/lenovo/YTX703F
+DEVICE_PATH := device/lenovo/YTX703L
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := yt_x703f
+TARGET_OTA_ASSERT_DEVICE := yt_x703l
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_YTX703F_defconfig
+TARGET_KERNEL_CONFIG := lineage_YTX703L_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/lenovo/YTX703F/BoardConfigVendor.mk
+-include vendor/lenovo/YTX703L/BoardConfigVendor.mk

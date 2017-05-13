@@ -10,4 +10,4 @@ ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
 
 # Radio
-ro.radio.noril=yes
+ro.radio.noril=no

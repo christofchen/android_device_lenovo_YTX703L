@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=YT-X703F
+export DEVICE=YT-X703L
 export DEVICE_COMMON=msm8976-common
 export VENDOR=lenovo
 
