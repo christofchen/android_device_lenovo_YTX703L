@@ -22,3 +22,12 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from msm8976-common
 $(call inherit-product, device/lenovo/msm8976-common/msm8976.mk)
+
+# RIL
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2 \
+    libqsap_sdk \
+    telephony-ext \
+    libminui \

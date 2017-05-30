@@ -18,6 +18,10 @@
 
 DEVICE_PATH := device/lenovo/YTX703L
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+TARGET_RIL_VARIANT := caf
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := yt_x703l
 
