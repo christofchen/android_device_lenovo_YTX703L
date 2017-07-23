@@ -31,3 +31,8 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     telephony-ext \
     libminui \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh
+
+
