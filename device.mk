@@ -32,7 +32,10 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     libminui \
 
+# init.class_main.sh is responsible for starting radio daemons
+# init.qcom.syspart_fixup.sh invokes init scripts from /system/etc/
+# (which are included in YTX703L-vendor.mk)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh
-
+    $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh \
+    $(LOCAL_PATH)/rootdir/init.qcom.syspart_fixup.sh:root/init.qcom.syspart_fixup.sh \
 
