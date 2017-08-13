@@ -34,14 +34,12 @@ PRODUCT_PACKAGES += \
     libnfnetlink \
     libnetfilter_conntrack
 
-# extra init scripts
-# init.class_main.sh is responsible for starting radio daemons
-# init.qcom.syspart_fixup.sh invokes init scripts from /system/etc/
-# (which are included in YTX703L-vendor.mk)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh \
-    $(LOCAL_PATH)/rootdir/init.qcom.syspart_fixup.sh:root/init.qcom.syspart_fixup.sh \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
+# Ramdisk: extra init scripts
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.qcom.syspart_fixup.sh \
+    init.qcom.wifi.sh \
+    init.class_main.sh
 
 # Qualcomm RIL-specific configs
 PRODUCT_COPY_FILES += \
