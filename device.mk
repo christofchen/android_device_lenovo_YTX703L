@@ -32,10 +32,22 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     libminui \
 
+# extra init scripts
 # init.class_main.sh is responsible for starting radio daemons
 # init.qcom.syspart_fixup.sh invokes init scripts from /system/etc/
 # (which are included in YTX703L-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh \
     $(LOCAL_PATH)/rootdir/init.qcom.syspart_fixup.sh:root/init.qcom.syspart_fixup.sh \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
+
+# Qualcomm RIL-specific configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(LOCAL_PATH)/configs/qmi_config.xml:system/etc/data/qmi_config.xml \
+    $(LOCAL_PATH)/configs/qcril.db:system/vendor/qcril.db \
+    $(LOCAL_PATH)/configs/default.prop:system/vendor/default.prop \
+    $(LOCAL_PATH)/configs/IPACM_cfg.xml:system/etc/IPACM_cfg.xml \
+    $(LOCAL_PATH)/configs/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml
 
