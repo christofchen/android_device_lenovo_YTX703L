@@ -31,6 +31,8 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     telephony-ext \
     libminui \
+    libnfnetlink \
+    libnetfilter_conntrack
 
 # extra init scripts
 # init.class_main.sh is responsible for starting radio daemons
