@@ -27,5 +27,8 @@ TARGET_KERNEL_CONFIG := lineage_YTX703L_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# SELinux Policies
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # inherit from the proprietary version
 -include vendor/lenovo/YTX703L/BoardConfigVendor.mk
