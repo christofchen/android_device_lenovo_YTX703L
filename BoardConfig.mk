@@ -30,5 +30,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # SELinux Policies
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Radio
+TARGET_RIL_VARIANT := caf
+
 # inherit from the proprietary version
 -include vendor/lenovo/YTX703L/BoardConfigVendor.mk
