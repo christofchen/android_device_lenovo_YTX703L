@@ -34,12 +34,11 @@ PRODUCT_PACKAGES += \
     libnfnetlink \
     libnetfilter_conntrack
 
-# Ramdisk: extra init scripts
+# Extra init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.qcom.syspart_fixup.sh \
-    init.qcom.wifi.sh \
-    init.class_main.sh
+    init.qcom.console.sh \
+    init.qcom.radio.sh
 
 # Qualcomm RIL-specific configs
 PRODUCT_COPY_FILES += \
