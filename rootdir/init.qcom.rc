@@ -608,6 +608,13 @@ service per_proxy /system/bin/pm-proxy
     disabled
     writepid /dev/cpuset/system-background/tasks
 
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start ims_rtp_daemon
+    start imscmservice
+
 on property:init.svc.per_mgr=running
     start per_proxy
 
