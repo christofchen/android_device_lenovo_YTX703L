@@ -32,4 +32,6 @@ DEVICE_PROVISIONED=1
 # Start in GWL mode
 ro.telephony.default_network=9
 
+debug.sf.nobootanimation=1
+
 import /system/vendor/default.prop
