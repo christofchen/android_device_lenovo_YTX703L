@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     init.qcom.console.sh \
     init.qcom.radio.sh
 
+# Libshims for ims
+PRODUCT_PACKAGES += \
+    libshims_ims
+
 # Qualcomm RIL-specific configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
