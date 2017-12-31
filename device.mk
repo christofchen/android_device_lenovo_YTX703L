@@ -36,17 +36,6 @@ PRODUCT_PACKAGES += \
 
 # Extra init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc \
+    init.target.rc \
     init.qcom.console.sh \
     init.qcom.radio.sh
-
-# Qualcomm RIL-specific configs
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
-    $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    $(LOCAL_PATH)/configs/qmi_config.xml:system/etc/data/qmi_config.xml \
-    $(LOCAL_PATH)/configs/qcril.db:system/vendor/qcril.db \
-    $(LOCAL_PATH)/configs/default.prop:system/vendor/default.prop \
-    $(LOCAL_PATH)/configs/IPACM_cfg.xml:system/etc/IPACM_cfg.xml \
-    $(LOCAL_PATH)/configs/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml
-
